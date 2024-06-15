@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="500.0" maxWidth="350.0" minHeight="500.0" minWidth="350.0" prefHeight="500.0" prefWidth="405.0" style="-fx-background-color: #1e1e2e; -fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <DropShadow>
+         <color>
+            <Color red="0.11764705926179886" green="0.11764705926179886" blue="0.18039216101169586" />
+         </color>
+      </DropShadow>
+   </effect>
+   <children>
+    <AnchorPane fx:id="titleBar" maxHeight="30.0" minHeight="50.0" minWidth="0.0" prefHeight="50.0" prefWidth="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="minimize_window" layoutX="80.0" layoutY="16.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleMinimizeWindow" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 10; -fx-border-style: none; -fx-background-color: #a6e3a1;" AnchorPane.leftAnchor="80.0" />
+            <Button fx:id="close_window" layoutX="20.0" layoutY="16.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleCloseWindow" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 10; -fx-border-style: none; -fx-background-color: #f38ba8;" AnchorPane.leftAnchor="20.0" />
+            <Button fx:id="maximize_window" layoutX="50.0" layoutY="16.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleMaximizeWindow" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 10; -fx-border-style: none; -fx-background-color: #fab387;" AnchorPane.leftAnchor="50.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="add_project" layoutX="10.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="49.0" prefWidth="329.0" style="-fx-background-color: #b4befe; -fx-background-radius: 10; -fx-text-fill: #ffffff;" text="Добавить проект" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ListView fx:id="projects_list" layoutX="10.0" layoutY="50.0" prefHeight="380.0" prefWidth="330.0" style="-fx-background-color: #313244; -fx-background-radius: 10;" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding></ListView>
+   </children>
+</AnchorPane>
